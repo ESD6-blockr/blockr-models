@@ -1,7 +1,7 @@
 /**
  * Blockheader
  */
-export default class BlockHeader {
+export class BlockHeader {
   public version: string;
   public blockNumber: number;
   public validator: string;

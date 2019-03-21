@@ -1,7 +1,7 @@
 /**
  * State
  */
-export default class State {
+export class State {
   public publicKey: string;
   public coin: number;
   public stake: number;

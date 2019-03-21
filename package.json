@@ -1,14 +1,14 @@
 {
-  "name": "blockr-models",
-  "version": "1.0.0",
+  "name": "@blockr/blockr-models",
+  "version": "1.0.2",
   "description": "Blockr models package",
-  "main": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build-watch": "tsc -w -p tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint --project tsconfig.json"
-  
   },
   "repository": {
     "type": "git",

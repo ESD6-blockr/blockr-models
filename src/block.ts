@@ -1,10 +1,10 @@
-import BlockHeader from "./blockHeader";
-import Transaction from "./transaction";
+import {BlockHeader} from "./blockHeader";
+import {Transaction} from "./transaction";
 
 /**
  * Default block in the chain
  */
-export default class Block {
+export class Block {
   public blockHeader: BlockHeader;
   public transactions: Transaction[];
 

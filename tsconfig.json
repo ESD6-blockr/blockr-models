@@ -1,13 +1,14 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",        // path to output directory
-        "sourceMap": true,          // allow sourcemap support
+        "outDir": "./dist/",
+        "sourceMap": true,
         "strictNullChecks": true,
-        "noImplicitReturns": true,   // enable strict null checks as a best practice
-        "target": "es5",            // specify ECMAScript target version
-        "allowJs": true             // allow a partial TypeScript and JavaScript codebase
+        "declaration": true,
+        "noImplicitReturns": true,
+        "target": "es5"
     },
     "include": [
         "src/**/*"
-    ]
+    ],
+    "exclude": ["node_modules"]
 }

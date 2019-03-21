@@ -4,6 +4,7 @@
 
 ### TypeScript ###
 dist/
+lib/
 
 ### Node ###
 # Logs
