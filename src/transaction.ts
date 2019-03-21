@@ -7,17 +7,17 @@ export default class Transaction {
   public timestamp: number;
   public type: string;
   public sender: string;
-  public signagture: string;
+  public signature: string;
   public blockHash: string;
 
   constructor(recipient: string, amount: number, timestamp: number,
-              type: string, sender: string, signagture: string, blockHash: string) {
+              type: string, sender: string, signature: string, blockHash: string) {
     this.recipient = recipient;
     this.amount = amount;
     this.timestamp = timestamp;
     this.type = type;
     this.sender = sender;
-    this.signagture = signagture;
+    this.signature = signature;
     this.blockHash = blockHash;
   }
 }
