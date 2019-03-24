@@ -1,6 +1,6 @@
 {
   "name": "@blockr/blockr-models",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "Blockr models package",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
