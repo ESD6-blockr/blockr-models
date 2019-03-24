@@ -1,7 +1,7 @@
 /**
  * Transactions
  */
-export default class Transaction {
+export class Transaction {
   public recipient: string;
   public amount: number;
   public timestamp: number;
