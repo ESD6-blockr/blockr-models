@@ -1,6 +1,6 @@
 import {BlockHeader} from "./blockHeader";
-import {Transaction} from "./transaction";
 import { IModel } from "./model";
+import {Transaction} from "./transaction";
 
 /**
  * Default block in the chain
