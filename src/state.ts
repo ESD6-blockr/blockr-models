@@ -1,7 +1,9 @@
+import { IModel } from "./model";
+
 /**
  * State
  */
-export class State {
+export class State implements IModel  {
   public publicKey: string;
   public coin: number;
   public stake: number;

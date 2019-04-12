@@ -1,7 +1,9 @@
+import { IModel } from "./model";
+
 /**
  * Blockheader
  */
-export class BlockHeader {
+export class BlockHeader implements IModel {
   public version: string;
   public blockNumber: number;
   public validator: string;
