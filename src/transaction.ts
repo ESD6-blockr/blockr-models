@@ -1,7 +1,9 @@
+import { IModel } from "./model";
+
 /**
  * Transactions
  */
-export class Transaction {
+export class Transaction implements IModel  {
   public recipient: string;
   public amount: number;
   public timestamp: number;
