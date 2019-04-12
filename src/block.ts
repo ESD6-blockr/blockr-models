@@ -1,10 +1,11 @@
 import {BlockHeader} from "./blockHeader";
+import { IModel } from "./model";
 import {Transaction} from "./transaction";
 
 /**
  * Default block in the chain
  */
-export class Block {
+export class Block implements IModel {
   public blockHeader: BlockHeader;
   public transactions: Transaction[];
 
