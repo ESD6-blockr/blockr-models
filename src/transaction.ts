@@ -1,25 +1,24 @@
 import { IModel } from "./model";
+import { TransactionType } from "./transactionType";
 
 /**
  * Transactions
  */
 export class Transaction implements IModel  {
-  public recipient: string;
+  public recipientKey: string;
   public amount: number;
   public timestamp: number;
-  public type: string;
-  public sender: string;
+  public type: TransactionType;
+  public senderKey: string;
   public signature: string;
-  public blockHash: string;
+  public blockHash: string; // TODO: WHAT IS THIS
 
-  constructor(recipient: string, amount: number, timestamp: number,
-              type: string, sender: string, signature: string, blockHash: string) {
-    this.recipient = recipient;
+  constructor(recipientKey: string, amount: number, timestamp: number,
+              type: TransactionType, senderKey: string) {
+    this.recipientKey = recipientKey;
     this.amount = amount;
     this.timestamp = timestamp;
     this.type = type;
-    this.sender = sender;
-    this.signature = signature;
-    this.blockHash = blockHash;
+    this.senderKey = senderKey;
   }
 }
