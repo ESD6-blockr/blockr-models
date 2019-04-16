@@ -9,7 +9,7 @@ export class BlockHeader implements IModel {
   public validator: string;
   public timestamp: number;
   public blockReward: number;
-  public blockHash: string;
+  public blockHash: string; // TODO: WHAT IS THIS
   public parentHash: string;
 
   constructor(version: string, blockNumber: number, validator: string,
