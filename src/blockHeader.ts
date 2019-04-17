@@ -4,22 +4,20 @@ import { IModel } from "./model";
  * Blockheader
  */
 export class BlockHeader implements IModel {
-  public version: string;
+  public validatorVersion: string;
   public blockNumber: number;
   public validator: string;
-  public timestamp: number;
+  public date: Date;
   public blockReward: number;
-  public blockHash: string;
+  public blockHash: string; // TODO: WHAT IS THIS
   public parentHash: string;
 
-  constructor(version: string, blockNumber: number, validator: string,
-              timestamp: number, blockReward: number, blockHash: string, parentHash: string) {
-      this.version = version;
+  constructor(validatorVersion: string, blockNumber: number, date: Date,
+              blockReward: number, blockHash: string) {
+      this.validatorVersion = validatorVersion;
       this.blockNumber = blockNumber;
-      this.validator = validator;
-      this.timestamp = timestamp;
+      this.date = date;
       this.blockReward = blockReward;
       this.blockHash = blockHash;
-      this.parentHash = parentHash;
     }
 }
