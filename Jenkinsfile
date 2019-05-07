@@ -1,12 +1,10 @@
 #!groovy
 @Library('blockr-jenkins-lib') _
 
-String repo = "blockr-models"
-
-Map settings = [
-    sonar_key: 'blockr-models',
-    source_folder: 'src/',
-    archive_folders: ['dist/']
+Map sonarSettings = [
+    key: "blockr-models",
+    source: "src/",
+    host: "https://sonarqube.naebers.me"
 ]
 
-tsBuildAndPublish(repo, settings)
+tsBuildAndPublish(sonarSettings)
