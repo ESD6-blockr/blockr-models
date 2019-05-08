@@ -1,4 +1,4 @@
-import {BlockHeader} from "./blockHeader";
+import { BlockHeader } from "./blockHeader";
 import { BlockType } from "./blockType";
 import { IModel } from "./model";
 import { Transaction } from "./transaction";
@@ -12,7 +12,7 @@ export class Block implements IModel {
   public transactions: Set<Transaction>;
 
   constructor(blockHeader: BlockHeader, transactions: Set<Transaction>, blockType?: BlockType) {
-    this.blockType = blockType || BlockType.REGUALAR;
+    this.blockType = blockType || BlockType.REGULAR;
     this.blockHeader = blockHeader;
     this.transactions = transactions;
   }

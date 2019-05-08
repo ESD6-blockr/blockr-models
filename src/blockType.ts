@@ -3,5 +3,5 @@
  */
 export enum BlockType {
     GENESIS,
-    REGUALAR,
+    REGULAR,
 }
