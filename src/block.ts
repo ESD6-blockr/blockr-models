@@ -11,8 +11,8 @@ export class Block implements IModel {
   public blockHeader: BlockHeader;
   public transactions: Set<Transaction>;
 
-  constructor(blockHeader: BlockHeader, transactions: Set<Transaction>, blockType?: BlockType) {
-    this.blockType = blockType || BlockType.REGULAR;
+  constructor(blockHeader: BlockHeader, transactions: Set<Transaction>, blockType: BlockType = BlockType.REGULAR) {
+    this.blockType = blockType;
     this.blockHeader = blockHeader;
     this.transactions = transactions;
   }
