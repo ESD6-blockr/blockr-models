@@ -1,6 +1,8 @@
 .scannerwork
-deploy
+coverage
 src
 Jenkinsfile
 tsconfig.json
 tslint.json
+jest.config.js
+junit.xml
