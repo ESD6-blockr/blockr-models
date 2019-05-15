@@ -11,7 +11,6 @@ export class Transaction implements IModel  {
   public amount: number;
   public date: Date;
   public signature: string;
-  public blockHash: string; // TODO: WHAT IS THIS
 
   constructor(type: TransactionType, recipientKey: string,
               senderKey: string, amount: number, date: Date) {
