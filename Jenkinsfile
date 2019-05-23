@@ -5,7 +5,7 @@ String repo = "blockr-models"
 
 Map settings = [
     sonar_key: 'blockr-models',
-    skip_tests: false,
+    sonar_exclusions: '**/__tests__/**/*, **/**/index.ts',
     source_folder: 'src/',
     archive_folders: ['dist/']
 ]
