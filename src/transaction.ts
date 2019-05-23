@@ -14,7 +14,7 @@ export class Transaction implements IModel  {
   public smartContractId?: string;
   public smartContractData?: string;
 
-  constructor(type: TransactionType, recipientKey: string, senderKey: string, 
+  constructor(type: TransactionType, recipientKey: string, senderKey: string,
               amount: number, date: Date, smartContractId?: string, smartContractData?: string) {
     this.recipientKey = recipientKey;
     this.amount = amount;
