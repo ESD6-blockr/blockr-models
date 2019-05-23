@@ -11,17 +11,22 @@ export class Transaction implements IModel  {
   public amount: number;
   public date: Date;
   public signature: string;
-  public contractId: Number;
+  public smartContractId: number;
   public contractData: string;
 
   constructor(type: TransactionType, recipientKey: string, senderKey: string, 
-              amount: number, date: Date, contractId: Number, contractData: string) {
+              amount: number, date: Date, smartContractId?: number, contractData?: string) {
     this.recipientKey = recipientKey;
     this.amount = amount;
     this.date = date;
     this.type = type;
     this.senderKey = senderKey;
-    this.contractId = contractId;
-    this.contractData = contractData;
+    
+    if (smartContractId != undefined) {
+        this.smartContractId = smartContractId;
+    }
+    if (contractData != undefined) { 
+        this.contractData = contractData;
+    }
   }
 }
