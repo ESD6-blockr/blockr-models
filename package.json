@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && cpy src/*.proto dist/",
     "build-watch": "tsc -w -p tsconfig.json",
     "lint": "tslint --project tsconfig.json",
     "test": "jest || exit 0",
@@ -17,7 +17,6 @@
   },
   "author": "Blockr",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.13",
     "jest": "^24.8.0",
@@ -25,6 +24,7 @@
     "ts-jest": "^24.0.2",
     "tslint": "^5.15.0",
     "tsutils": "^3.10.0",
-    "typescript": "^3.4.3"
+    "typescript": "^3.4.3",
+    "cpy-cli": "^2.0.0"
   }
 }
