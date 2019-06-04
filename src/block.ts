@@ -9,9 +9,9 @@ import { Transaction } from "./transaction";
 export class Block implements IModel {
   public blockType: BlockType;
   public blockHeader: BlockHeader;
-  public transactions: Set<Transaction>;
+  public transactions: Transaction[];
 
-  constructor(blockHeader: BlockHeader, transactions: Set<Transaction>, blockType: BlockType = BlockType.REGULAR) {
+  constructor(blockHeader: BlockHeader, transactions: Transaction[], blockType: BlockType = BlockType.REGULAR) {
     this.blockType = blockType;
     this.blockHeader = blockHeader;
     this.transactions = transactions;

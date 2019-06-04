@@ -10,12 +10,12 @@ describe("Block object", () => {
             new BlockHeader(
                 "1.0.0", 1, new Date(), 10,
             ),
-            new Set().add(
+            [
                 new Transaction(
                     TransactionType.COIN, "TEST_RECIPIENT_KEY", "TEST_SENDER_KEY",
                     10, new Date(),
                 ),
-            ),
+            ],
             BlockType.REGULAR,
         );
 
