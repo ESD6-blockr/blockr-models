@@ -5,3 +5,4 @@ export { State } from "./state";
 export { Transaction } from "./transaction";
 export { IModel } from "./model";
 export { TransactionType } from "./transactionType";
+export { TransactionWrapper } from "./transactionWrapper";

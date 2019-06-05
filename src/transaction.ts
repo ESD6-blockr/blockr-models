@@ -10,7 +10,6 @@ export class Transaction implements IModel  {
   public senderKey: string;
   public amount: number;
   public date: Date;
-  public signature: string;
   public smartContractId?: string;
   public smartContractData?: string;
 
