@@ -15,7 +15,7 @@ describe("Transaction object", () => {
 describe("Transaction wrapper object", () => {
     it("Should instantiate with valid parameters", () => {
         const transactionWrapper = new TransactionWrapper(
-            new Transaction(TransactionType.COIN, "RICIPIENT_KEY", "SENDER_KEY", 1, new Date()),
+            new Transaction(TransactionType.COIN, "RECIPIENT_KEY", "SENDER_KEY", 1, new Date()),
             "SIGNATURE",
         );
         
