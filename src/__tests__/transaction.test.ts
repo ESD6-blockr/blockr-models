@@ -23,15 +23,3 @@ describe("Transaction object", () => {
         expect(transaction.signature).toBeDefined();
     });
 });
-
-describe("Transaction wrapper object", () => {
-    it("Should instantiate with valid parameters", () => {
-        const transactionWrapper = new TransactionWrapper(
-            new Transaction(TransactionType.COIN, "RECIPIENT_KEY", "SENDER_KEY", 1, new Date()),
-            "SIGNATURE",
-        );
-        
-        expect(transactionWrapper).toBeDefined();
-        expect(transactionWrapper).toBeInstanceOf(TransactionWrapper);
-    });
-});

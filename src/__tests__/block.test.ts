@@ -1,7 +1,7 @@
-import { Transaction } from "..";
 import { Block } from "../block";
 import { BlockHeader } from "../blockHeader";
 import { BlockType } from "../blockType";
+import { Transaction } from "../transaction";
 import { TransactionHeader } from "../transactionHeader";
 import { TransactionType } from "../transactionType";
 
