@@ -6,6 +6,9 @@ import { IModel } from "./model";
 export class BlockHeader implements IModel {
   public validatorVersion: string;
   public blockNumber: number;
+  /**
+   * Name of the validator
+   */
   public validator: string;
   public date: Date;
   public blockReward: number;
