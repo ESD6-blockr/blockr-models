@@ -1,7 +1,6 @@
 import { Transaction } from "../transaction";
 import { TransactionHeader } from "../transactionHeader";
 import { TransactionType } from "../transactionType";
-import { TransactionWrapper } from "../transactionWrapper";
 
 describe("Transaction object", () => {
     it("Should instantiate with valid parameters", () => {

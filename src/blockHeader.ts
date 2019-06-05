@@ -7,7 +7,7 @@ export class BlockHeader implements IModel {
   public validatorVersion: string;
   public blockNumber: number;
   /**
-   * Name of the validator
+   * Validator public key
    */
   public validator: string;
   public date: Date;
