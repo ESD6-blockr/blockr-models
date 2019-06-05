@@ -6,3 +6,4 @@ export { Transaction } from "./transaction";
 export { TransactionHeader } from "./transactionHeader";
 export { IModel } from "./model";
 export { TransactionType } from "./transactionType";
+export { TransactionWrapper } from "./transactionWrapper";
