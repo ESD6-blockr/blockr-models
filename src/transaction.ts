@@ -1,26 +1,25 @@
 import { IModel } from "./model";
+import { TransactionHeader } from "./transactionHeader";
 import { TransactionType } from "./transactionType";
 
 /**
- * Transactions
+ * Transaction holds the transaction data 
+ * and the signature made with an EC key pair.
  */
-export class Transaction implements IModel  {
-  public type: TransactionType;
-  public recipientKey: string;
-  public senderKey: string;
-  public amount: number;
-  public date: Date;
-  public smartContractId?: string;
-  public smartContractData?: string;
+export class Transaction implements IModel {
+    public type: TransactionType;
+    /**
+     * Holds the data of the transaction
+     */
+    public transactionHeader: TransactionHeader;
+    /**
+     * Signature of the transaction header
+     */
+    public signature: string;
 
-  constructor(type: TransactionType, recipientKey: string, senderKey: string,
-              amount: number, date: Date, smartContractId?: string, smartContractData?: string) {
-    this.recipientKey = recipientKey;
-    this.amount = amount;
-    this.date = date;
-    this.type = type;
-    this.senderKey = senderKey;
-    this.smartContractId = smartContractId;
-    this.smartContractData = smartContractData;
-  }
+    constructor(type: TransactionType, transactionHeader: TransactionHeader, signature: string) {
+        this.type = type;
+        this.transactionHeader = transactionHeader;
+        this.signature = signature;
+    }
 }

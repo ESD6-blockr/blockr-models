@@ -2,15 +2,16 @@ import { IModel } from "./model";
 
 /**
  * State
+ * Holds the state of the defined publicKey
  */
 export class State implements IModel  {
   public publicKey: string;
-  public coin: number;
+  public amount: number;
   public stake: number;
 
-  constructor(publicKey: string, coin: number, stake: number) {
+  constructor(publicKey: string, amount: number, stake: number) {
     this.publicKey = publicKey;
-    this.coin = coin;
+    this.amount = amount;
     this.stake = stake;
   }
 }
