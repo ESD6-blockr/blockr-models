@@ -7,7 +7,7 @@ Map settings = [
     sonar_key: 'blockr-models',
     sonar_exclusions: '**/__tests__/**/*,**/**/index.ts',
     source_folder: 'src/',
-    archive_folders: ['dist/']
+    archive_folders: ['dist/', 'coverage/]
 ]
 
 tsBuildAndPublish(repo, settings)
