@@ -1,3 +1,5 @@
+import "reflect-metadata";
+
 import { BlockHeader } from "../blockHeader";
 
 describe("BlockHeader object", () => {

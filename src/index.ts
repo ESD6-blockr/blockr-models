@@ -1,3 +1,5 @@
+import "reflect-metadata";
+
 export { Block } from "./block";
 export { BlockType } from "./blockType";
 export { BlockHeader } from "./blockHeader";

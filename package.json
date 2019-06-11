@@ -18,7 +18,8 @@
   "author": "Blockr",
   "license": "MIT",
   "dependencies": {
-    "class-transformer": "^0.2.3"
+    "class-transformer": "^0.2.3",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "@types/jest": "^24.0.12",
