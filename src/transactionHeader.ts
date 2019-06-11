@@ -1,3 +1,4 @@
+import { Type } from "class-transformer";
 import { IModel } from "./model";
 
 /**
@@ -8,6 +9,7 @@ export class TransactionHeader implements IModel {
   public recipientKey: string;
   public senderKey: string;
   public amount: number;
+  @Type(() => Date)
   public date: Date;
   public smartContractId?: string;
   public smartContractData?: string;
