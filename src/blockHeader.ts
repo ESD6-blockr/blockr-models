@@ -1,3 +1,4 @@
+import { Type } from "class-transformer";
 import { IModel } from "./model";
 
 /**
@@ -10,6 +11,7 @@ export class BlockHeader implements IModel {
    * Validator public key
    */
   public validator: string;
+  @Type(() => Date)
   public date: Date;
   public blockReward: number;
   public parentHash: string;

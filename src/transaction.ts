@@ -1,3 +1,4 @@
+import { Type } from "class-transformer";
 import { IModel } from "./model";
 import { TransactionHeader } from "./transactionHeader";
 import { TransactionType } from "./transactionType";
@@ -11,6 +12,7 @@ export class Transaction implements IModel {
     /**
      * Holds the data of the transaction
      */
+    @Type(() => TransactionHeader)
     public transactionHeader: TransactionHeader;
     /**
      * Signature of the transaction header

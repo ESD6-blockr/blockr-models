@@ -1,3 +1,5 @@
+import "reflect-metadata";
+
 import { Transaction } from "../transaction";
 import { TransactionHeader } from "../transactionHeader";
 import { TransactionType } from "../transactionType";

@@ -1,3 +1,5 @@
+import "reflect-metadata";
+
 import { Block } from "../block";
 import { BlockHeader } from "../blockHeader";
 import { BlockType } from "../blockType";
